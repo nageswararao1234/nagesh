@@ -1,0 +1,10 @@
+{% if recipes %}
+    <h1>RECIPE LIST</h1>
+    {% for each in recipes %}
+<a href="">{{each.name}}</a><br>
+    {% endfor %}
+{% else %}
+   No recipes Avaliable
+{% endif %}
+
+<br><a href="/recipe/create/">CreateRecipe</a>
